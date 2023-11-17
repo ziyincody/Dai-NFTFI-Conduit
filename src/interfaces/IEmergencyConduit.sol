@@ -8,7 +8,7 @@ import { IAllocatorConduit } from 'dss-allocator/IAllocatorConduit.sol';
  * @notice This interface extends the IAllocatorConduit interfaces and manages asset
  *         and fund operations
  */
-interface ISparkLendConduit is IAllocatorConduit {
+interface IEmergencyConduit is IAllocatorConduit {
 
     /**********************************************************************************************/
     /*** Events                                                                                 ***/
@@ -37,13 +37,6 @@ interface ISparkLendConduit is IAllocatorConduit {
     /**********************************************************************************************/
     /*** State Variables                                                                        ***/
     /**********************************************************************************************/
-
-    /**
-     *  @notice Returns the pool associated with the SparkLend instance.
-     *  @return The address of the pool.
-     */
-    function pool() external view returns (address);
-
     /**
      *  @notice Returns the roles contract.
      *  @return The address representing the roles.
