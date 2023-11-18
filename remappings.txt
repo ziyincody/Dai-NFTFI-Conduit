@@ -1,0 +1,2 @@
+dss-allocator/=lib/dss-allocator/src/
+dss-test/=lib/dss-allocator/lib/dss-test/src/
